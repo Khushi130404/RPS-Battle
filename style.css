@@ -1,0 +1,48 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+    margin: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+td {
+    color: #363062;
+    font-size: larger;
+    align-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+img {
+    height: 60%;
+    width: 60%;
+    border: #B5C0D0 4px solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: #EEF7FF;
+}
+
+button {
+    background-color: #B5C0D0;
+    border: 0px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+tr {
+    align-content: center;
+}

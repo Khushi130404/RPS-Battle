@@ -6,56 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        table {
-            text-align: center;
-            margin: 0px;
-            margin-left: 150px;
-            margin-right: 150px;
-        }
-
-        td {
-            color: #363062;
-            font-size: larger;
-            align-content: center;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-weight: 600;
-            vertical-align: middle;
-            padding: 10px;
-        }
-
-        img {
-            height: 60%;
-            width: 60%;
-            border: #B5C0D0 4px solid;
-            border-radius: 20px;
-            padding: 20px;
-        }
-
-        body {
-            background-color: #EEF7FF;
-        }
-
-        button {
-            background-color: #B5C0D0;
-            border: 0px;
-            border-radius: 20px;
-            padding: 5px;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        tr {
-            align-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -67,8 +18,8 @@
                 <td colspan="2" class="align-baseline">Scissors</td>
             </tr>
             <tr>
-                <td colspan="2"><img id="rock" src="svg/hand-rock-svgrepo-com.svg" alt="Rock"
-                        onclick="makeMove(this)"></td>
+                <td colspan="2"><img id="rock" src="svg/hand-rock-svgrepo-com.svg" alt="Rock" onclick="makeMove(this)">
+                </td>
                 <td colspan="2"><img id="paper" src="svg/hand-paper-svgrepo-com.svg" alt="Paper"
                         onclick="makeMove(this)"></td>
                 <td colspan="2"><img id="scissor" src="svg/two-fingers-svgrepo-com.svg" alt="Scissors"
@@ -113,61 +64,7 @@
         </table>
     </div>
 
-    <script>
-        let you = document.getElementById('you');
-        let com = document.getElementById('com');
-        let win = document.getElementById('win');
-        let loss = document.getElementById('loss');
-        let tie = document.getElementById('tie');
-        let game = document.getElementById('game')
-
-        function makeMove(e) {
-            you.src = e.src;
-            let n = Math.round(Math.random() * 100) % 3;
-            let m;
-            switch (n) {
-                case 0: com.src = "svg/hand-rock-svgrepo-com.svg";
-                    break;
-
-                case 1: com.src = "svg/hand-paper-svgrepo-com.svg";
-                    break;
-
-                case 2: com.src = "svg/two-fingers-svgrepo-com.svg";
-            }
-            console.log(e.id);
-            switch (e.id) {
-                case 'rock': m = 0;
-                    break;
-
-                case 'paper': m = 1;
-                    break;
-
-                case 'scissor': m = 2;
-            }
-            if (m == n) {
-                tie.innerHTML = (tie.innerHTML - '0') + 1;
-                game.innerHTML = "Tie...!";
-            }
-            else if (m - n == 1 || m - n == -2) {
-                win.innerHTML = (win.innerHTML - '0') + 1;
-                game.innerHTML = "You won...!";
-            }
-            else if (m - n == -1 || m - n == 2) {
-                loss.innerHTML = (loss.innerHTML - '0') + 1;
-                game.innerHTML = "you loss...!";
-            }
-        }
-
-        function resetButton() {
-            tie.innerHTML = 0;
-            win.innerHTML = 0;
-            loss.innerHTML = 0;
-            game.innerHTML = "";
-            you.src = "svg/profile-round-1342-svgrepo-com.svg";
-            com.src = "svg/computer-svgrepo-com.svg";
-        }
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 

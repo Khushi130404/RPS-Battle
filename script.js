@@ -1,3 +1,10 @@
+const score = 
+{
+    win : 0,
+    tie : 0,
+    loss : 0
+}
+
 let you = document.getElementById('you');
 let com = document.getElementById('com');
 let win = document.getElementById('win');
@@ -29,15 +36,18 @@ function makeMove(e) {
         case 'scissor': m = 2;
     }
     if (m == n) {
-        tie.innerHTML = (tie.innerHTML - '0') + 1;
+        score.tie++;
+        tie.innerHTML = score.tie;
         game.innerHTML = "Tie...!";
     }
     else if (m - n == 1 || m - n == -2) {
-        win.innerHTML = (win.innerHTML - '0') + 1;
+        score.win++;
+        win.innerHTML = score.win;
         game.innerHTML = "You won...!";
     }
     else if (m - n == -1 || m - n == 2) {
-        loss.innerHTML = (loss.innerHTML - '0') + 1;
+        score.loss++;
+        loss.innerHTML = score.loss;
         game.innerHTML = "you loss...!";
     }
 }
@@ -47,6 +57,9 @@ function resetButton() {
     win.innerHTML = 0;
     loss.innerHTML = 0;
     game.innerHTML = "";
+    score.tie = 0;
+    score.win = 0;
+    score.loss = 0;
     you.src = "svg/profile-round-1342-svgrepo-com.svg";
     com.src = "svg/computer-svgrepo-com.svg";
 }

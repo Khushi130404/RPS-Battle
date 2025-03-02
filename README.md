@@ -49,7 +49,7 @@ Clicking the **Reset 🔄** button will clear the score and allow you to start a
 
 ```
 RPS-Battle/
-│── 📜 rockPaperScissors.html  # Game structure
+│── 📜 rockPaperScissor.html  # Game structure
 │── 🎨 style.css   # Styling
 │── ⚡ script.js   # Game logic
 │── 📂 svg   # For images

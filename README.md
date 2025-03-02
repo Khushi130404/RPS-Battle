@@ -2,6 +2,7 @@
 
 RPS Battle is a fun and interactive **Rock-Paper-Scissors** game built with **HTML, CSS, and JavaScript**! 🎨💻 Challenge the computer, track your score 📊, and reset anytime! 🔄
 
+
 ## 🚀 Technologies Used 🛠️
 
 - **📜 HTML**: Structure of the game
@@ -9,6 +10,7 @@ RPS Battle is a fun and interactive **Rock-Paper-Scissors** game built with **HT
 - **🎨 CSS**: Styling and layout
 
 - **⚡ JavaScript**: Game logic and interactivity
+
 
 ## 🎮 How to Play 🕹️
 
@@ -25,6 +27,7 @@ RPS Battle is a fun and interactive **Rock-Paper-Scissors** game built with **HT
    
 5. Click **Reset 🔄** to clear the scores and start fresh! 🎯
 
+
 ## 🏆 Score Tracking 📊
 
 The game keeps track of:
@@ -33,6 +36,7 @@ The game keeps track of:
 - **💀 Losses**: When the computer beats you 🤖
 
 - **🤝 Ties**: When both choices are the same 😲
+
 
 ## 🔄 Reset Option ♻️
 
@@ -44,6 +48,7 @@ Clicking the **Reset 🔄** button will clear the score and allow you to start a
 - 📊 **Real-time Score Tracking**
 - 🎲 **Randomized Computer Choices**
 - 🔄 **Reset Functionality** for a fresh start!
+
 
 ## 📂 Project Structure 🏗️
 
